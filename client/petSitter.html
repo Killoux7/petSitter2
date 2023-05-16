@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chloé - Pet Sitter</title>
+  <link rel="stylesheet" type="text/css" href="./css/petSitter.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Pet-Sitting</h1>
+  </div>
+
+  <div id="profile">
+    <img  id="profile-image" alt="Photo de profil">
+    
+    <div class="rating-profile">
+      <span class="additional-text">Note: 5/5</span>
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;</span> <!-- Exemple de note 4 étoiles -->
+    </div>
+
+    <section class="contact-info">
+      <h2>Profile</h2>
+      <div class="profile-card">
+        <div class="profile-info">
+          <span>Nom : <span id="prenom"></span></span>
+        </div>
+        <div class="profile-info">
+          <span>Pet sitter à <span id="city"></span>
+        </div>
+
+        <div class="profile-info">
+          <span>Âge : <span id="age"></span>
+        </div>
+        <div class="profile-info">
+          <span>Garde à la maison : <span id="home_stay"></span></span>
+        </div>
+        <div class="profile-info">
+          <span>Promenade : <span id="dog_walks"></span></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>❤️ Description</h2>
+      <p id="description">I have always been fond of animals, especially cats, since I was a child. 
+        Cats have always fascinated me, which is why I would love to take care of your pets. 
+        I can look after them during the day or night at your home or visit them.</p>    
+    </section>
+
+   
+
+
+
+    <section id="commentaire">
+      <h2>&#128172; Commentaires</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="comment">
+            <img src="./photos/chat1.jpeg" alt="Photo 1">
+            <p>Great pet sitting service! My furry friend had a wonderful time and was well taken care of. Highly
+              recommend!</p>
+            <p class="author">John Doe</p>
+            <span class="additional-text-commentaire">Note: 5/5</span>
+            <span class="stars-commentaire">&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <div class="comment">
+            <img src="./photos/chien1.jpeg" alt="Photo 2">
+            <p>Amazing pet sitter! They went above and beyond to ensure my pet's happiness and safety. Will definitely
+              book again!</p>
+            <p class="author">Jane Smith</p>
+            <span class="additional-text-commentaire">Note: 5/5</span>
+            <span class="stars-commentaire">&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <div class="comment">
+            <img src="./photos/lapin.jpeg" alt="Photo 3">
+            <p>Outstanding pet care service! My pet felt right at home and received lots of love and attention. Thank you!
+            </p>
+            <p class="author">David Johnson</p>
+            <span class="additional-text-commentaire">Note: 5/5</span>
+            <span class="stars-commentaire">&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="choose-petsitter">I choose this Pet Sitter</button>
+
+
+  </div>
+  <script src="./carrousel/carrousel2.js"></script>
+  <script src="petSitterScriptDetails.js"></script>
+</body>
+
+</html>

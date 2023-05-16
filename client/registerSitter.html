@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Devenir le petSitter </h1>
+    <br>
+
+    <div id="form-container">
+        <h3>Les informations sur vous</h3>
+        <div   id="human-form" >
+          <input placeholder="Name" name="firstName_sitter" type="text" id="firstName_sitter">
+          <br>
+          <input placeholder="Prénom" name="lastName_sitter" type="text" id="lastName_sitter">
+          <br>
+          <input placeholder="Email" name="email_sitter" type="text" id="email_sitter">
+          <br>
+          <input placeholder="Password" name="password_sitter" type="password" id="password">
+          <br>
+          <input placeholder="Date de naissance" name="age_sitter" type="date" id="date">
+          <br>
+          <input placeholder="numero de telephone" name="phone_sitter" type="text" id="tel">
+          <br>
+          <input placeholder="Prix par jour" name="price" type="text" id="prix">
+          <br>
+          <input placeholder="City" name="city_sitter" type="text" id="city">
+          <br>
+          <input placeholder="Déscription" name="description_sitter" type="text" id="description">
+          <br>
+          
+        
+          <!-- Pets acceptés -->
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+                <label for="dogs">Dogs</label>
+                <input type="checkbox" id="dogs" value="true">
+            </div>
+            <div class="checkbox-item">
+                <label for="cats">Cats</label>
+                <input type="checkbox" id="cats" >
+            </div>
+            <div class="checkbox-item">
+                <label for="hamster">Hamster</label>
+                <input type="checkbox" id="hamster">
+            </div>
+          </div>
+
+          <!-- Services proposés -->
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <label for="home_stay">Garde à domicile</label>
+              <input type="checkbox" id="home_stay" value="home_stay">
+            </div>
+            <div class="checkbox-item">
+              <label for="dog_walks">Promenades</label>
+              <input type="checkbox" id="dog_walks" value="dog_walks">
+            </div>
+          </div>
+
+          <br>          
+        </div>
+        <button class="sub" id="boutonEnregistrer">Enregistrer</button>
+      </div>
+      
+        
+  <script src="script.js"></script>
+   
+    
+</body>
+</html>

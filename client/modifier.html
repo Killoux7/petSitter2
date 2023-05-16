@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="./css/modifier.css">
+<body>
+
+  <div class="card">
+    <h2>Formulaire de modification</h2>
+    
+    <label for="fname">Prénom:</label><br>
+    <input type="text" id="firstName_owner" name="firstName_owner" value=""><br>
+    <label for="lname">Nom:</label><br>
+    <input type="text" id="lastName_owner" name="lastName_owner" value=""><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email_owner" name="email_owner" value=""><br>
+    <label for="email">Phone:</label><br>
+    <input type="text" id="phone_owner" name="phone_owner" value=""><br>
+    <label for="email">City:</label><br>
+    <input type="text" id="city_owner" name="city_owner" value=""><br>
+    <label for="email">Password:</label><br>
+    <input type="text" id="password_owner" name="password_owner" value=""><br>
+    <button id="userForm" class="submit-button" type="button" value="Soumettre">Submit</button> 
+  </div>
+  
+   
+
+    <script> 
+    const URLServeur = "http://localhost:4000/";
+        async function getUserData() {
+  try {
+    const response = await fetch(URLServeur+'api/user', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'auth-token': localStorage.getItem('auth-token')
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`An error has occurred: ${response.status}`);
+    }
+
+    const user = await response.json();
+
+
+    // Préremplir le formulaire avec les données de l'utilisateur récupérées
+    document.getElementById('firstName_owner').value = user.firstName;
+    document.getElementById('lastName_owner').value = user.lastName;
+    document.getElementById('email_owner').value = user.email;
+    document.getElementById('phone_owner').value = user.phone;
+    document.getElementById('city_owner').value = user.city;
+   
+    document.getElementById('password_owner').value
+   
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// Appel de la fonction lorsque la page est chargée
+window.onload = getUserData;
+
+async function updateUser() {
+  try {
+
+
+    const userData = {
+        firstName_owner: document.getElementById('firstName_owner').value,
+  lastName_owner: document.getElementById('lastName_owner').value,
+  email_owner: document.getElementById('email_owner').value,
+  password_owner: document.getElementById('password_owner').value,
+  phone_owner: document.getElementById('phone_owner').value,
+  city_owner: document.getElementById('city_owner').value,
+    };
+    console.log(userData)
+
+    const response = await fetch(URLServeur+'api/user', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'auth-token': localStorage.getItem('auth-token')
+      },
+      body: JSON.stringify(userData)
+    });
+
+    if (!response.ok) {
+      throw new Error(`An error has occurred: ${response.status}`);
+    }
+
+    alert("Profil utilisateur mis à jour avec succès");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// Associer cette fonction à la soumission du formulaire
+document.getElementById('userForm').addEventListener('click', updateUser);
+    </script>
+</body>
+</html>

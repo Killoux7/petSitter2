@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 35px;
+  }
+  
+  .contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .profile-info {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .profile-info span {
+    color: #555;
+  }
+  
+  
+  #profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+  }
+  
+  #profile img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    float: right;
+  }
+  
+  #profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #profile p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  #profile .contact-info {
+    margin-top: 35px;
+  }
+  
+  #profile .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #profile .contact-info p {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .animal-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .animal-card-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .animal-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .animal-emoji {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .animal-name {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .animal-card-details p {
+    margin: 0;
+  }
+  
+  .animal-card-details strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  
+  /* Ajout des styles pour les traits de couleur et l'espace entre les sections */
+  #profile section {
+    padding-top: 20px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+    background-image: linear-gradient(to left, transparent 75%, #964B00 75%);
+    background-size: 100% 3px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  
+  /*Bouton*/
+  #choose-petsitter {
+    background-color: #FF6F61;
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 4p;
+    transition: background-color 0.3s ease; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  #choose-petsitter:hover {
+    background-color: #D65158;
+  }
+  
+  
+  
+  
+  
+  #experience {
+    text-align: left; /* Centre le contenu de la section */
+  }
+  
+  .rating-profile {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 135px;
+  }
+  
+  .additional-text {
+    display: block; /* Affiche la note sur une nouvelle ligne */
+  }
+  
+  .stars {
+    display: block;
+    font-size: 24px; /* Taille des étoiles */
+    color: #FFD700; /* Couleur des étoiles (jaune) */
+  }
+  
+  .stars:before {
+    content: "\2605"; /* Code unicode de l'étoile pleine */
+    margin-right: 2px; /* Espacement entre les étoiles */
+  }
+  
+  /*carrousel*/
+  /* Positionnement général des commentaires */
+  
+  
+  .carousel-container {
+    width: 325px;  /* Augmentez la largeur du conteneur du carrousel selon vos besoins */
+    margin: 40px auto;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  /* Style du carousel */
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Style des commentaires */
+  .comment {
+    position: relative; /* Ajout d'une position relative pour positionner le texte */
+    display: flex;
+    flex-direction: column; /* Utilisation d'une disposition en colonne */
+    align-items: flex-start;
+    margin-right: 20px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .author {
+    text-align: right;
+    font-style: italic;
+  }
+  
+  /* Positionnement de la photo */
+  .comment img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Ajout d'une marge inférieure pour séparer la photo du texte */
+  }
+  
+  .additional-text-commentaire {
+    position: absolute;  /* Ajoutez cette ligne pour positionner le texte absolument */
+    top: 15%;  /* Ajustez cette valeur pour positionner le texte plus bas */
+    right: 35%;  /* Ajustez cette valeur pour positionner le texte plus à droite */
+  }
+  
+  .stars-commentaire {
+    position: absolute;  /* Ajoutez cette ligne pour positionner le texte absolument */
+    top: 25%;  /* Ajustez cette valeur pour positionner le texte plus bas */
+    right: 30%;  /* Ajustez cette valeur pour positionner le texte plus à droite */
+    color: #FFD700;  /* Couleur des étoiles (jaune) */
+  }
+  
+  .stars-commentaire:before {
+    content: "\2605";  /* Code unicode de l'étoile pleine */
+    margin-right: 2px;  /* Espacement entre les étoiles */
+  }
