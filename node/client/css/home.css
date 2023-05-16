@@ -1,0 +1,579 @@
+/* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  
+  
+  .content-wrapper {
+    min-height: calc(100% - 60px);
+    /* Définit une hauteur minimale de 100% moins la hauteur du footer */
+    /* (ajustez la valeur 60px en fonction de la hauteur réelle de votre footer) */
+    padding-bottom: 60px;
+    /* Ajoute un espace en bas pour ne pas que le contenu soit caché par le footer */
+    box-sizing: border-box;
+    /* Inclut les paddings dans la hauteur totale */
+  }
+  
+  
+  /* Header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Section */
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Banner */
+  .banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Form */
+  .form-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Card Container */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .card:hover {
+    background-color: lightgray;
+  
+  }
+  
+  /* Card */
+  .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    /* Ajout de la propriété "cursor" pour changer le curseur au survol */
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .card img {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .additional-text-card {
+    margin-left: auto;
+    /* Déplace le texte à l'extrême droite */
+    margin-right: 10px;
+    /* Espace entre le texte et les étoiles */
+  }
+  
+  
+  .stars-card {
+    color: #FFD700;  /* Couleur des étoiles (jaune) */
+  }
+  
+  .stars-card:before {
+    content: "\2605";  /* Code unicode de l'étoile pleine */
+    margin-right: 2px;  /* Espacement entre les étoiles */
+  }
+  
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .emoji-button {
+    background-color: #ffb6c1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer; 
+  }
+
+  .active {
+    background-color: #ff4d4d;
+  }
+ 
+  
+  /* Form Row */
+  .form-row {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .submit-button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .banner-section {
+    background-image: url("../photos/banniereanimaux.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Form Overlay */
+  .form-overlay {
+    width: 500px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    /* Ajoute des bordures arrondies */
+    background-color: #fff;
+    /* Définit la couleur de fond blanche */
+  }
+  
+  .form-label {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .form-input {
+    flex: 2;
+    margin-left: 10px;
+  }
+  
+  /* Form Row within Form Overlay */
+  /* ... */
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-row label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-row input[type="text"] {
+    flex: 2;
+  }
+  
+  .form-row .submit-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #ffb6c1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .pale-pink-button {
+    background-color: #ff8184;
+    /* Définit la couleur de fond rose pâle */
+    color: #fff;
+    /* Définit la couleur du texte en blanc */
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .pale-pink-button:hover {
+    background-color: red;
+  }
+  
+  /* Emoji Button */
+  .emoji-button {
+    font-size: 18px;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Modifier pour aligner le contenu en haut */
+  }
+  
+  .left-section {
+    text-align: left;
+    /* Modifier pour aligner le texte à gauche */
+    flex: 1;
+    /* Nouvelle propriété pour occuper l'espace disponible */
+  }
+  
+  .left-section h2,
+  .left-section p {
+    text-align: center;
+    /* Modifier pour centrer le texte horizontalement */
+    color: #fff;
+  }
+  
+  .right-section {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  
+  /* ... */
+  
+  .full-width-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 25%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content::before {
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 25%;
+    height: 5px;
+    /* Hauteur de la barre */
+    background-color: brown;
+  }
+  
+  .card-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 5px;
+    position: relative;
+    /* Ajouter la position relative pour positionner la barre */
+    padding-top: 10px;
+    /* Espacement supérieur de la carte */
+  }
+  
+  .card-button {
+    background-color: #ff8184;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    font-size: 18px;
+    margin: 0 auto;
+    /* Modifier la propriété margin */
+    margin-right: 15px;
+  }
+  
+  
+  .card-button:hover {
+    background-color: red;
+  }
+  
+  /*Banniere sous carte Devenir Pet Sitter*/
+  .content-prestation {
+    background-image: url("../photos/chien-surface.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    /* Ajustez la hauteur de la bannière selon vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Aligner la carte à droite */
+    padding-right: 20px;
+    /* Ajuster l'espacement à droite */
+    margin-top: 50px;
+  }
+  
+  .card-prestation {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 51%;
+    /* Ajustez la largeur de la carte selon vos besoins */
+  }
+  
+  .card-content {
+    text-align: left;
+    /* Aligner le texte à gauche */
+    color: #333;
+  }
+  
+  .card-content p {
+    margin-bottom: 0px;
+    /* Ajustez la valeur selon vos besoins */
+  }
+  
+  .emoji {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .emoji-prestation {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /*Texte sous la banniere prestation*/
+  
+  .section-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .left-column::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    /* Ajuste le niveau de l'élément par rapport aux autres */
+    top: 0;
+    /* Place la barre en haut */
+    left: 150px;
+    /* Ajuste la position horizontale de la barre */
+    width: 25%;
+    /* Ajuste la largeur de la barre */
+    height: 5px;
+    /* Hauteur de la barre */
+    background-color: brown;
+  
+  }
+  
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centre le contenu verticalement */
+    align-items: center;
+    /* Centre le contenu horizontalement */
+    position: relative;
+    /* Position relative pour positionner l'élément ::before */
+  }
+  
+  .image-container {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  .rounded-image {
+    width: 100px;
+    /* Ajustez la taille de l'image selon vos besoins */
+    border-radius: 50%;
+    /* Rend l'image arrondie */
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* Centre le contenu verticalement */
+    align-items: left;
+    /* Centre le contenu horizontalement */
+  }
+  
+  .right-column p {
+    position: relative;
+    padding-left: 20px;
+    /* Ajoute de l'espace pour le marqueur de liste */
+    margin-bottom: 5px;
+    /* Ajuste l'espace entre les balises <p> */
+    font-size: 20px;
+    /* Ajuste la taille du texte */
+  }
+  
+  .right-column p::before {
+    content: "\2714";
+    /* Utilise le symbole de coche Unicode */
+    position: absolute;
+    left: 0;
+    color: green;
+    /* Couleur de la coche */
+  }
+  
+  /*texte sous la banniere jaune*/
+  .full-width-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-section {
+    flex-basis: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Ajout de cette ligne */
+  }
+  
+  
+  .emoji-banniere {
+    margin-right: 10px;
+  }
+  
+  .text-section p {
+    font-size: 1.5em;
+  }
+  
+  /*carrousel*/
+  .carousel-container {
+    width: 900px;  /* Augmentez la largeur du conteneur du carrousel selon vos besoins */
+    margin: 40px auto;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .comment {
+    position: relative;
+    width: 400px;  /* Augmentez la largeur des cartes selon vos besoins */
+    height: 200px;  /* Augmentez la hauteur des cartes selon vos besoins */
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  
+  .comment img {
+    width: 100px;  /* Ajoutez la taille souhaitée pour les photos */
+    height: 100px;
+    border-radius: 50%;  /* Rend les coins de l'image arrondis */
+  }
+  
+  .author {
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .additional-text {
+    position: absolute;  /* Ajoutez cette ligne pour positionner le texte absolument */
+    top: 20%;  /* Ajustez cette valeur pour positionner le texte plus bas */
+    right: 35%;  /* Ajustez cette valeur pour positionner le texte plus à droite */
+  }
+  
+  .stars {
+    position: absolute;  /* Ajoutez cette ligne pour positionner le texte absolument */
+    top: 30%;  /* Ajustez cette valeur pour positionner le texte plus bas */
+    right: 30%;  /* Ajustez cette valeur pour positionner le texte plus à droite */
+    color: #FFD700;  /* Couleur des étoiles (jaune) */
+  }
+  
+  .stars:before {
+    content: "\2605";  /* Code unicode de l'étoile pleine */
+    margin-right: 2px;  /* Espacement entre les étoiles */
+  }
